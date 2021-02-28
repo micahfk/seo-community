@@ -1,0 +1,8 @@
+name: SEO Community
+description: Connecting and Advancing SEO
+url: https://seo-community.org
+permalink: /articles/:title
+plugins:
+  - jekyll-redirect-from
+sass:
+    style: compressed
