@@ -368,7 +368,15 @@ template {
   display: none;
 }
 
-/* main.scss | Jordan Silton | https://jordanSilton.com */
+/* main.scss | SEO Community | https://seo-community.org */
+
+/* Colors */
+$white-color: #FFFFFF !default;
+$light-color: #B3EFFF !default;
+$bright-color: #00CFFF !default;
+$medium-color: #046B99 !default;
+$dark-color: #1C304A !default;
+$black-color: #000000 !default;
 
 /* Grid */
 
@@ -472,8 +480,8 @@ body {
   line-height: 1.6;
   font-weight: 300;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #363030;
+  background-color: $white-color;
+  color: $dark-color;
 }
 p {
   margin-top: 0;
@@ -513,9 +521,10 @@ img {
   margin-bottom:3rem;
   padding-top:5px;
   font-size:14px;
-  color:#000;
+  color: $black-color;
   a {
-    color:#000;
+    color: $medium-color;
+    text-decoration: underline;
     border:0;
     :hover{
       opacity:.5;
@@ -526,8 +535,8 @@ img {
 
 #tooltip {
   position:absolute;
-  background:#fff;
-  color:#000;
+  background: $white-color;
+  color: $black-color;
   padding:1.5rem 2rem;
   opacity:.9;
   font-size: 1.3rem;
@@ -559,7 +568,7 @@ h1 {
   margin-bottom: 4rem;
   font-weight: 500; 
   font-family: Helvetica, Arial, sans-serif;
-  color:#000;
+  color: $dark-color;
   letter-spacing: -.15rem;
   font-size: 3rem;
   line-height: 1.1;
@@ -569,7 +578,7 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 2.5rem;
   font-weight: 700; 
   font-family: Helvetica, Arial, sans-serif;
-  color:#000;
+  color: $dark-color;
   text-transform: uppercase;
   letter-spacing:.3rem;
   line-height: 1.2;
@@ -589,13 +598,13 @@ h6 { font-size: 1.6rem; }
 /* Links */
 
 a {
-  color: #000; 
-  border-bottom:1px solid #000;
-  text-decoration:none;}
+  color: $medium-color; 
+  text-decoration: underline;
+}
 a:hover {
-  color:#000;
-  border-bottom:1px solid #efdcd9; 
-  transition:.5s;}
+  color: $bright-color;
+  transition:.5s;
+}
 
 /* Lists */
 
@@ -634,7 +643,7 @@ hr {
   margin-top: 8rem;
   margin-bottom: 8rem;
   border-width: 0;
-  border-top: 2px solid #000;
+  border-top: 2px solid $medium-color;
   width:40px;
   text-align:left;
   margin-left:0;}
@@ -643,7 +652,7 @@ hr.f {
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-width: 0;
-  border-top: 1px solid #cabbbb;
+  border-top: 1px solid $light-color;
   width:100%;
   text-align:left;
   margin-left:0;}
